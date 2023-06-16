@@ -1,3 +1,102 @@
-button {
-    font-size: 60px;
+@import "../../../themes/colors.scss";
+
+.button {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 12px;
+	width: auto;
+	margin: 2px;
+	box-shadow: 0px 4px 10px rgba(38, 81, 66, 0.27);
+	border-radius: 4px;
+	padding: 0.5rem;
+	border: none;
+	cursor: pointer;
+	color: black;
+	text-transform: capitalize;
+
+	&.primary {
+		background-color: $primary;
+		color: $white;
+	}
+	&.secondary {
+		background-color: $secondary;
+		color: $white;
+	}
+	&.tretiary {
+		background-color: $tretiary;
+		color: $white;
+	}
+	&.error {
+		background-color: $error;
+		color: $white;
+	}
+	&.green-9f {
+		background-color: $green9F;
+		color: $primary;
+	}
+	&.grey-f5 {
+		background-color: $greyF5;
+		color: #4f4f4f;
+	}
+	&.white {
+		background-color: $white;
+		color: $primary;
+	}
+	&.red {
+		background-color: $redD1;
+		color: $white;
+	}
+	&.grey {
+		background-color: $grey4;
+		color: $white;
+	}
+	&.transparent {
+		background-color: transparent;
+	}
+	&.disabled {
+		background-color: $grey3;
+	}
+
+	&.hover:hover {
+		background-color: #f5f6f8;
+	}
+	&.active {
+		border: 2px solid #0071f2;
+		background-color: rgba(208, 227, 253, 0.48);
+		color: #0071f2;
+	}
+
+	// text color
+	&.text-color-primary {
+		color: $primary;
+	}
+	&.text-color-secondary {
+		color: $secondary;
+	}
+	&.text-color-tretiary {
+		color: $tretiary;
+	}
+	&.text-color-error {
+		color: $error;
+	}
+	&.text-color-green-9f {
+		color: $green9F;
+	}
+
+	&.text-color-white {
+		color: $white;
+	}
+	&.text-color-red {
+		color: $redD1;
+	}
+	&.text-color-grey {
+		color: $grey4;
+	}
+	p {
+		width: 200px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
