@@ -5,7 +5,7 @@
     "registry": "https://npm.pkg.github.com/cube-componentlib"
   },
   "repository": "https://github.com/dimasokta14/cube-componentlib",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "license": "MIT",
