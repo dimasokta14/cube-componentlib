@@ -1,0 +1,34 @@
+$types: 
+    "p" 0.875rem,
+    "span" 0.75rem;
+
+$weights:
+    "normal" normal,
+    "thin" lighter,
+    "bold" bold,
+    "bolder" bolder;
+
+@font-face {
+    font-family: "Poppins-Regular" !important;
+    src: url("../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.text-base {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 1.3;
+    letter-spacing: 0.03333em;
+
+    @each $type, $size in $types {
+        &.text-#{$type} {
+            font-size: $size;
+        }
+    }
+
+    @each $weight, $value in $weights {
+        &.text-weight-#{$weight} {
+            font-weight: $value;
+        }
+    }
+}
