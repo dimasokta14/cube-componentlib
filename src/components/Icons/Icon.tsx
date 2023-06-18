@@ -72,3 +72,21 @@ export const AccountCircleRegular = ({
         <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} viewBox="0 0 24 24"><path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z"></path></svg>
     )
 }
+
+export const GobletRegular = ({
+    size = 14,
+    color = "black"
+}:IconProps) => {
+    return (
+        <svg width={size} height={size} fill={color} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 19V13.8889L3 5V3H21V5L13 13.8889V19H18V21H6V19H11ZM7.49073 7H16.5093L18.3093 5H5.69072L7.49073 7Z"></path></svg>    
+    )
+}
+
+export const GobletLine= ({
+    size = 14,
+    color = "black"
+}:IconProps) => {
+    return (
+        <svg width={size} height={size} fill={color} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 19V13.8889L3 5V3H21V5L13 13.8889V19H18V21H6V19H11ZM7.49073 7H16.5093L18.3093 5H5.69072L7.49073 7ZM9.29072 9L12 12.0103L14.7093 9H9.29072Z"></path></svg>
+    )
+}
